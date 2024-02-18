@@ -25,7 +25,7 @@ def verificar_adicao_arquivo(pasta):
 def criar_relatorio(arquivos_adicionados, relatorio_path):
         if arquivos_adicionados and relatorio_path is not None:
            with open(relatorio_path, 'w') as arquivo_relatorio:
-            arquivo_relatorio.write(f"ARQUIVOS ADICIONADOS NAS ÚLTIMAS {data_user} HORAS\n\n")
+            arquivo_relatorio.write(f"teste ADICIONADOS NAS ÚLTIMAS {data_user} HORAS\n\n")
             for ultima_modificacao, arquivo, pasta_arquivo in arquivos_adicionados:
                     data_hora_formatada = ultima_modificacao.strftime("%d-%m-%Y / %H:%M:%S")
                     arquivo_relatorio.write(f"\nDATA/HORA {data_hora_formatada}\nNOME DA PASTA = {pasta_arquivo}\nNOME DO ARQUIVO = {arquivo} \n----------------------------------------------\n")
